@@ -1,4 +1,4 @@
-# DCA1202_Trat_de_Classes_Abstratas
+# DCA1202 Tratamento de Classes Abstratas
 Segundo projeto da 2ª unidade da disciplina de Programação Avançada
 
 2. Projeto 2 - Tratamento de classes abstratas
