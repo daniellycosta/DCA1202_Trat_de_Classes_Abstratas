@@ -1,9 +1,12 @@
 #include <iostream>
+#include<screen.h>
 
 using namespace std;
 
-int main(int argc, char *argv[])
-{
-    cout << "Hello World!" << endl;
+int main(){
+
+    Screen s;
+    s.setPixel(0,0);
+    cout << s;
     return 0;
 }

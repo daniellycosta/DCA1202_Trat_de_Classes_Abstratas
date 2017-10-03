@@ -7,11 +7,11 @@ using namespace std;
 Screen::Screen(int nl, int nc){
     nlin = nl;
     ncol = nc;
-    mat = vector<vector<char>>(nlin, vector<char>(ncol,'.'))
+    mat = vector<vector<char>>(nlin, vector<char>(ncol,'.'));
 }
 
 void Screen::setPixel(int x, int y){
-    if(x<nlin & y<ncol){
+    if((x<nlin) & (y<ncol)){
         mat[x][y] = brush;
     }
     else{
@@ -37,10 +37,10 @@ void Screen::setBrush(char _brush){
 
 }
 
-ostream &Screen::operator<<(ostream &os, Screen &t){
-    for(int i=0; i<t.size(); i++){
-        for(int j=0; j<t[i].size(); j++){
-            os << t[i][j] << " ";
+ostream& operator<<(ostream &os, Screen &t){
+    for(int i=0; i<t.nlin; i++){
+        for(int j=0; j<t.ncol; j++){
+            os << t[i][j] << " "; //perguntar pq não ta compilando
         }
         os << endl;
     }

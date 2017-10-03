@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<vector>
+using namespace std;
 
 class Screen{
 private:
