@@ -17,7 +17,8 @@ public:
   void setPixel(int x, int y);
   void clear();
   void setBrush(char _brush);
+  friend ostream& operator<<(ostream &os, Screen &t);
 };
-friend ostream& operator<<(ostream &os, Screen &t);
+
 
 #endif // SCREEN_H
