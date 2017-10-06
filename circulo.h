@@ -6,9 +6,9 @@
 class Circulo : public FiguraGeometrica{
 private:
     int raio,x,y;
-    bool ehfilled;
+    bool isFilled;
 public:
-    Circulo(int _x,int _y,int _r, bool _ehfilled);
+    Circulo(int _x, int _y, int _r, bool _isFilled);
     void draw(Screen &t);
     void pontosDaCircunferencia(int x,int y);
 };
