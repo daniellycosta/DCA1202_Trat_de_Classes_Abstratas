@@ -11,11 +11,8 @@ Screen::Screen(int nl, int nc){
 }
 
 void Screen::setPixel(int x, int y){
-    if(((x<nlin) & (y<ncol)) || (x<0) & (y<0)){
+    if((x<nlin) & (y<ncol) && (x>=0) & (y>=0)){
         mat[x][y] = brush;
-    }
-    else{
-       cout<<"[SC] Erro! Coordenadas fora da tela \n";
     }
 }
 
@@ -28,23 +25,15 @@ void Screen::clear(){
 }
 
 void Screen::setBrush(char _brush){
-    if(_brush != ' '){
-        brush = _brush;
-    }
-    else{
-        cout<<"[SC] Erro! Brush com símbolo invalido \n";
-    }
-
+    brush = _brush;
 }
 
-ostream& operator<<(ostream &os, Screen &t){
-    int cont = 0;
+ostream& operator<<(ostream &os, Screen &t){;
     for(int i=0; i<t.nlin; i++){
         for(int j=0; j<t.ncol; j++){
-            os << t.mat[i][j] << cont;
-            cont++;
+            os << t.mat[i][j];
         }
         os <<endl;
     }
-        return(os);
+    return(os);
 }

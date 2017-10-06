@@ -8,9 +8,11 @@ using namespace std;
 
 int main(){
 
-    Screen s;
+    Screen s(50,50);
     s.setBrush('+');
-    Reta teste(0,1,0,5);
+    //Reta teste(0,0,0,9);
+    //Retangulo teste(0,0,5,5);
+    Circulo teste(25,25,10,1);
     teste.draw(s);
 
     //s.setPixel(5,2);

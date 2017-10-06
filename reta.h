@@ -5,9 +5,9 @@
 
 class Reta : public FiguraGeometrica{
 private:
-    int ptosReta[4];
+    int xi,yi,xf,yf;
 public:
-    Reta(int xi, int yi, int xf, int yf);
+    Reta(int _xi=0, int _yi=0, int _xf=0, int _yf=0);
     void draw(Screen &t);
 };
 
