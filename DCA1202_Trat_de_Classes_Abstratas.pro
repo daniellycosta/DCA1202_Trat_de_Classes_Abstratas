@@ -8,11 +8,13 @@ SOURCES += main.cpp \
     reta.cpp \
     retangulo.cpp \
     figurageometrica.cpp \
-    circulo.cpp
+    circulo.cpp \
+    brush.cpp
 
 HEADERS += \
     screen.h \
     reta.h \
     retangulo.h \
     figurageometrica.h \
-    circulo.h
+    circulo.h \
+    brush.h

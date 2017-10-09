@@ -1,0 +1,7 @@
+dim 25 25
+brush #
+line 0 0 10 0
+brush @
+circle 10 10 2 0
+brush
+rectangle  0 0 4 4
