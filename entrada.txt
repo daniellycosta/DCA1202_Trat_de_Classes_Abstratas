@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 dim 25 25
 brush #
 line 0 0 10 0
@@ -5,3 +6,6 @@ brush @
 circle 10 10 2 0
 brush
 rectangle  0 0 4 4
+=======
+dim 25 25
+>>>>>>> 29c0f4aacef564d481a8dc9a8869a4ea6fc27097
