@@ -4,7 +4,15 @@
 #include<cmath>
 
 using namespace std;
-
+/**
+ * @brief Construtor da Reta
+ * @details Recebe dois pontos,o inicial e o final, da reta declarada e aloca
+ *  nas variáveis privadas da classe.
+ * @param _xi Coordenada x do ponto inicial
+ * @param _yi Coordenada y do ponto inicial
+ * @param _xf Coordenada x do ponto final
+ * @param _yf Coordenada y do ponto final
+ */
 Reta::Reta(int _xi, int _yi, int _xf, int _yf){
 
     xi = _xi;
@@ -12,7 +20,12 @@ Reta::Reta(int _xi, int _yi, int _xf, int _yf){
     xf = _xf;
     yf = _yf;
 }
-
+/**
+ * @brief Método draw da reta
+ * @param t Tela a receber o desenho da reta.
+ * Utiliza o algoritmo de Bresenham para aproximar a reta real à digital
+ * e ativa a função setPixel da tela.
+ */
 void Reta::draw(Screen &t){
     float Tamanho;
     float Delta_x;

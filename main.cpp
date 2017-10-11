@@ -28,9 +28,9 @@ int main(){
     bool fillmode;
     Screen s;
 
-    entrada.open("C:/Users/Dany/Documents/GitHub/DCA1202_Trat_de_Classes_Abstratas/entrada.txt");
+    //entrada.open("C:/Users/Dany/Documents/GitHub/DCA1202_Trat_de_Classes_Abstratas/entrada.txt");
     //entrada.open("C:/Users/do lar/Documents/GitHub/DCA1202_Trat_de_Classes_Abstratas/entrada.txt");
-    //entrada.open("C:/Users/D2/Desktop/DCA1202_Trat_de_Classes_Abstratas-master/entrada.txt");
+    entrada.open("C:/Users/D2/Desktop/DCA1202_Trat_de_Classes_Abstratas-master/entrada.txt");
 
     if(entrada.is_open()){
         cout << "Arquivo aberto com sucesso\n";
@@ -76,9 +76,9 @@ int main(){
     cout << s;
     entrada.close();
 
-    saida.open("C:/Users/Dany/Documents/GitHub/DCA1202_Trat_de_Classes_Abstratas/saida.txt");
+    //saida.open("C:/Users/Dany/Documents/GitHub/DCA1202_Trat_de_Classes_Abstratas/saida.txt");
     //saida.open("C:/Users/do lar/Documents/GitHub/DCA1202_Trat_de_Classes_Abstratas/saida.txt");
-    //saida.open("C:/Users/D2/Desktop/DCA1202_Trat_de_Classes_Abstratas-master/saida.txt");
+    saida.open("C:/Users/D2/Desktop/DCA1202_Trat_de_Classes_Abstratas-master/saida.txt");
 
     saida << s;
     saida.close();
